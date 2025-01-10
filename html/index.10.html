@@ -2,14 +2,18 @@
 
 
 <body>
-
-            <form method="get" action="browse.php">
                 <table id="catwrap">
                     <tbody>
                         <tr>
                             <td>
                                 <table id="catselect">
                                     <tbody>
+                                        <tr>
+                                            <td colspan="2">
+                                                Search : <input type="text" name="search" id="browsesearch" size="40" value="" autocomplete="off" class="ac_input">
+                                                <input type="submit" value="Search!">
+                                            </td>
+                                        </tr>
                                         <tr>
                                             <td><input name="c1" type="checkbox" value="1"><a href="https://www.dedbit.com/browse.php?cat=1">ในพระราชสำนัก</a></td>
                                             <td><input name="c4" type="checkbox" value="1"><a href="https://www.dedbit.com/browse.php?cat=4">รายการทีวี</a></td>
@@ -45,28 +49,9 @@
                                     </tbody>
                                 </table>
                             </td>
-                            <td>
-                                <select name="incldead">
-                                    <option value="0">active</option>
-                                    <option value="1" selected="">including dead</option>
-                                    <option value="2">only dead</option>
-                                </select><br>
-                                <label><input type="checkbox" name="freeload" value="1">Freeload?</label><br>
-                                <input type="submit" value="Go!">
-                            </td>
+                            
                         </tr>
-                        <tr>
-                            <td colspan="2">
-                                Search : <input type="text" name="search" id="browsesearch" size="40" value="" autocomplete="off" class="ac_input">
-                                <input type="submit" value="Search!">
-                            </td>
-                        </tr>
+                        
                     </tbody>
-                </table>
-            </form>
-        </div>
-    </div>
-</div>
-
-<div align="right" style="font: 8px Tahoma;">Page generation time: <span id="pagegentime">0.009</span> seconds / memory usage: 611.04 kB / dbdelay: 0 seconds @ dsa1</div>
-</body>
+                </body>
+           
